@@ -1,8 +1,18 @@
-// _app.tsx
-import { AppProps } from 'next/app';  // Importing AppProps type
-import '../styles/globals.css';  // Import global styles, including Tailwind CSS
-import React from 'react';  // Explicitly import React if it's not automatically imported
+import { AppProps } from 'next/app'; // Importing AppProps type
+import '../styles/globals.css'; // Import global styles, including Tailwind CSS
+import React from 'react'; // Explicitly import React if it's not automatically imported
+import Wishlist from '../components/wishlist';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
+  
+  return (
+    <div>
+      <h1>My E-Commerce App</h1>
+      <Wishlist />
+      <Component {...pageProps} />
+    </div>
+  );
+};
+
+export default App;
+

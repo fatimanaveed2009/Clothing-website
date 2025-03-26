@@ -6,29 +6,49 @@ const Pricing: React.FC = () => {
   return (
     <section className="pricing bg-blue-500 text-white py-20">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Our Pricing Plans</h2>
+        <h3 className="text-3xl font-bold mb-8">EDITOR`S PICK</h3>
+        <p>Problems trying to resolve the conflict between </p>
         <div className="flex justify-center space-x-6">
-          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg w-64">
-            <h3 className="text-xl font-semibold">Basic Plan</h3>
-            <p className="my-4">Some features of the Basic Plan</p>
-            <p className="text-lg font-bold">$19.99/month</p>
-            <button className="mt-4 bg-blue-700 text-white py-2 px-6 rounded">Subscribe</button>
+          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+          <img
+          src="/card-item.png" 
+        alt="example picture" 
+        width="510px"
+        height="500px"
+      />
           </div>
           <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg w-64">
-            <h3 className="text-xl font-semibold">Pro Plan</h3>
-            <p className="my-4">Some features of the Pro Plan</p>
-            <p className="text-lg font-bold">$39.99/month</p>
-            <button className="mt-4 bg-blue-700 text-white py-2 px-6 rounded">Subscribe</button>
+            <img 
+            src="/col-md-3.png"
+            alt="example image"
+            width="240px"
+            height="500px"
+            />
           </div>
-          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg w-64">
-            <h3 className="text-xl font-semibold">Premium Plan</h3>
-            <p className="my-4">Some features of the Premium Plan</p>
-            <p className="text-lg font-bold">$59.99/month</p>
-            <button className="mt-4 bg-blue-700 text-white py-2 px-6 rounded">Subscribe</button>
+          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg w-64 p-20px" >
+            <img 
+            src="/filter.png"
+            alt="example image"
+            width="239px"
+            height="242px"
+            margin-right="1px"
+            flex-direction="column"
+            />
+          
+            <img 
+            src="/media bg-cover.png"
+            alt="example image"
+            width="240px"
+            height="220px"
+            flex-direction="column"
+            />
           </div>
         </div>
+
+        
       </div>
     </section>
+    
   );
 };
 
